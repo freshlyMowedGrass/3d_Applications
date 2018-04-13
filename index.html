@@ -1,0 +1,544 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/x3dom.css">
+
+  <link rel="stylesheet" href="css/custom.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+  <title>Lab 6 of</title>
+</head>
+
+<!--_____________________________________________________________________________________________________-->
+
+<body id="bodyColor">
+
+  <!--_________N A V    S T A R T________________________________________________________________________-->
+
+  <nav id="headerColor" class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
+    <!-- Brand -->
+    <div class="logo">
+      <a class="navbar-brand" href="javascript:swap('home')">
+        <h1>1oca</h1>
+        <h2>Cola</h2>
+        <h3>Journey</h3>
+      </a>
+    </div>
+
+
+    <!-- Navbar menu icon      ££££££££££££ -->
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse ">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--  Link menu icon to class ££££££££ navbar-collapse selector -->
+
+    <div class="collapse navbar-collapse">
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="javascript:swap('home')">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" title=" Title text will go in here"
+            data-content="Data Content will go in here">About</a>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Drinks
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="javascript:swap('coke')">Coca Cola</a>
+            <a class="dropdown-item" href="javascript:swap('sprite')">Sprite</a>
+            <a class="dropdown-item" href="javascript:swap('pepper')">Dr Pepper</a>
+          </div>
+        </li>
+        <li class="nav-item">
+
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--_________N A V     E N D_________________________________________________________________________
+
+
+                                              88               
+                                              ""               
+
+              88,dPYba,,adPYba,   ,adPPYYba,  88  8b,dPPYba,   
+              88P'   "88"    "8a  ""     `Y8  88  88P'   `"8a  
+              88      88      88  ,adPPPPP88  88  88       88  
+              88      88      88  88,    ,88  88  88       88  
+              88      88      88  `"8bbdP"Y8  88  88       88  
+
+-->
+
+  <div class="container-fluid">
+
+    <div class="main_contents" id="home">
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="main_3d_image">
+            <div id="main_text" class="col-xs-12 col-sm-4">
+              <div id="title_home"></div>
+              <div id="subTitle_home"></div>
+              <div id="description_home"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row ">
+        <div class="col-sm-4 ">
+          <div class="card">
+            <a href="javascript:swap('coke')">
+              <img class="card-img-top img-fluid img-thumbnail " src="assets/images/coca_cola.jpg " alt="Coca Cola ">
+            </a>
+            <div class="card-body">
+              <div id="title_left" class="card-title drinksText"></div>
+              <div id="subTitle_left" class="card-subtitle drinksText"></div>
+              <div id="description_left" class="card-text drinksText"></div>
+              <a href="#" class="btn btn-primary">Find out more...</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <a href="javascript:swap('sprite')">
+              <img class="card-img-top img-fluid img-thumbnail " src="assets/images/sprite.jpg " alt="Sprite ">
+            </a>
+            <div class="card-body">
+              <div id="title_centre" class="card-title drinksText"></div>
+              <div id="subTitle_centre" class="card-subtitle drinksText"></div>
+              <div id="description_centre" class="card-text drinksText"></div>
+              <a href="#" class="btn btn-primary">Find out more...</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <a href="javascript:swap('pepper')">
+              <img class="card-img-top img-fluid img-thumbnail " src="assets/images/pepper.jpg " alt="Dr Pepper ">
+            </a>
+            <div class="card-body ">
+              <div id="title_right" class="card-title drinksText"></div>
+              <div id="subTitle_right" class="card-subtitle drinksText"></div>
+              <div id="description_right" class="card-text drinksText"></div>
+              <a href="#" class="btn btn-primary">Find out more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--_________M A I N     E N D______________________________________________
+
+                                             88                    
+                                             88                    
+                                             88                    
+                     ,adPPYba,   ,adPPYba,   88   ,d8   ,adPPYba,  
+                    a8"     ""  a8"     "8a  88 ,a8"   a8P_____88  
+                    8b          8b       d8  8888[     8PP"""""""  
+                    "8a,   ,aa  "8a,   ,a8"  88`"Yba,  "8b,   ,aa  
+                     `"Ybbd8"'   `"YbbdP"'   88   `Y8a  `"Ybbd8"'       -->
+
+    <div class="main_contents" id="coke" style="display:none;">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="card text-left">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="javascript:swap('coke')">Coke</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:swap('sprite')">Sprite</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:swap('pepper')">Pepper</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    View
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Front</a>
+                    <a class="dropdown-item" href="#">Back</a>
+                    <a class="dropdown-item" href="#">Side</a>
+                    <a class="dropdown-item" href="#">Bottom</a>
+                    <a class="dropdown-item" href="#">Top</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-body">
+              <h4 class="card-title">Coca Cola X3D model</h4>
+              <div class "model3d">
+                <x3d>
+                  <scene>
+                    <inline url="coke.x3d"></inline>
+                  </scene>
+                </x3d>
+              </div>
+              <p class="card-text">This X3D model of the coke can has been created in 3ds Max, exported to VRML97 and converted, using the instantreality
+                transcoders, to X3D for display online.</p>
+              <h5 class="card-subtitle">Camera views</h5>
+              <div class="camera-btns">
+                <p>These buttons select a range of X3D model viewpoints</p>
+                <div class="btn-group">
+                  <a href="#" class="btn btn-primary btn-responsive camera-font">Front</a>
+                  <a href="#" class="btn btn-secondary btn-responsive camera-font">Back</a>
+                  <a href="#" class="btn btn-success btn-responsive camera-font">Left</a>
+                  <a href="#" class="btn btn-danger btn-responsive camera-font">Right</a>
+                  <a href="#" class="btn btn-warning btn-responsive camera-font">Top</a>
+                  <a href="#" class="btn btn-outline-dark disabled btn-responsive camera-font">Off</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3D image gallery -->
+        <div class="col-sm-4">
+          <div class="card text-left">
+            <div class="card-header gallery-header">
+              Gallery
+            </div>
+            <div class="card-body">
+              <div class="card-title title_gallery drinksText"></div>                         <!-- H E R E -->
+              <div class="gallery" id="gallery1"></div>
+              <div class="card-text description_gallery drinksText"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <div id="title_coke" class="card-title drinksText"></div>
+              <div id="subTitle_coke" class="card-subtitle drinksText"></div>
+              <div id="description_coke" class="card-text drinksText"></div>
+              <a href="www.owenfeltham.com" class="btn btn-primary">Find out more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--___________________________c o k e   e n d ______________________________
+
+
+                                                88                      
+                                                ""    ,d                
+                                                      88                
+            ,adPPYba,  8b,dPPYba,   8b,dPPYba,  88  MM88MMM  ,adPPYba,  
+            I8[    ""  88P'    "8a  88P'   "Y8  88    88    a8P_____88  
+             `"Y8ba,   88       d8  88          88    88    8PP"""""""  
+            aa    ]8I  88b,   ,a8"  88          88    88,   "8b,   ,aa  
+            `"YbbdP"'  88`YbbdP"'   88          88    "Y888  `"Ybbd8"'  
+                      88                                               
+                      88                                               
+  -->
+
+    <div class="main_contents" id="sprite" style="display:none;">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="card text-left">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:swap('coke')">Coke</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="javascript:swap('sprite')">Sprite</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:swap('pepper')">Pepper</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    View
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Front</a>
+                    <a class="dropdown-item" href="#">Back</a>
+                    <a class="dropdown-item" href="#">Side</a>
+                    <a class="dropdown-item" href="#">Bottom</a>
+                    <a class="dropdown-item" href="#">Top</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="card-body">
+              <h4 class="card-title">Sprite X3D model</h4>
+              <div class "model3d">
+                <x3d>
+                  <scene>
+                    <inline url="coke.x3d"></inline>
+                  </scene>
+                </x3d>
+              </div>
+              <p class="card-text">This X3D model of the sprite bottle has been created in 3ds Max, exported to VRML97 and converted, using the
+                instantreality transcoders, to X3D for display online.</p>
+              <h5 class="card-subtitle">Camera views</h5>
+              <div class="camera-btns">
+                <p>These buttons select a range of X3D model viewpoints</p>
+                <div class="btn-group ">
+                  <a href="#" class="btn btn-primary btn-responsive camera-font">Front</a>
+                  <a href="#" class="btn btn-secondary btn-responsive camera-font">Back</a>
+                  <a href="#" class="btn btn-success btn-responsive camera-font">Left</a>
+                  <a href="#" class="btn btn-danger btn-responsive camera-font">Right</a>
+                  <a href="#" class="btn btn-warning btn-responsive camera-font">Top</a>
+                  <a href="#" class="btn btn-outline-dark disabled btn-responsive camera-font">Off</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 3D image gallery -->
+        <div class="col-sm-4">
+          <div class="card text-left">
+            <div class="card-header gallery-header">
+              Gallery
+            </div>
+            <div class="card-body">
+              <div class="card-title title_gallery drinksText"></div>                         <!-- H E R E -->
+              <div class="gallery" id="gallery1"></div>
+              <div class="card-text description_gallery drinksText"></div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Sprite</h3>
+              <p class="card-text">Sprite, first introduced in 1961, crisp, refreshing, clean-tasting Sprite is now the world's leading lemon
+                and lime flavoured soft drink and is sold in more than 190 different countries. Sprite Zero, part of our
+                no sugar Zero range, offers the delicious lemon lime taste of Sprite without the sugar or calories.
+              </p>
+              <a href="www.owenfeltham.com" class="btn btn-primary">Find out more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+<!--___________________________s p r i t e    e n d_________________________
+
+
+      8b,dPPYba,    ,adPPYba,  8b,dPPYba,   8b,dPPYba,    ,adPPYba,  8b,dPPYba,  
+      88P'    "8a  a8P_____88  88P'    "8a  88P'    "8a  a8P_____88  88P'   "Y8  
+      88       d8  8PP"""""""  88       d8  88       d8  8PP"""""""  88          
+      88b,   ,a8"  "8b,   ,aa  88b,   ,a8"  88b,   ,a8"  "8b,   ,aa  88          
+      88`YbbdP"'    `"Ybbd8"'  88`YbbdP"'   88`YbbdP"'    `"Ybbd8"'  88          
+      88                       88           88                                   
+      88                       88           88                                   
+  -->
+
+
+
+    <div class="main_contents" id="pepper" style="display:none;">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="card text-left">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:swap('coke')">Coke</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:swap('sprite')">Sprite</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="javascript:swap('pepper')">Pepper</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    View
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Front</a>
+                    <a class="dropdown-item" href="#">Back</a>
+                    <a class="dropdown-item" href="#">Side</a>
+                    <a class="dropdown-item" href="#">Bottom</a>
+                    <a class="dropdown-item" href="#">Top</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="card-body">
+              <h4 class="card-title">Dr Pepper X3D model</h4>
+              <div class "model3d">
+                <x3d>
+                  <scene>
+                    <inline url="coke.x3d"></inline>
+                  </scene>
+                </x3d>
+              </div>
+              <p class="card-text">This X3D model of the pepper cup has been created in 3ds Max, exported to VRML97 and converted, using the instantreality
+                transcoders, to X3D for display online.</p>
+              <h5 class="card-subtitle">Camera views</h5>
+              <div class="camera-btns">
+                <p>These buttons select a range of X3D model viewpoints</p>
+                <div class="btn-group ">
+                  <a href="#" class="btn btn-primary btn-responsive camera-font">Front</a>
+                  <a href="#" class="btn btn-secondary btn-responsive camera-font">Back</a>
+                  <a href="#" class="btn btn-success btn-responsive camera-font">Left</a>
+                  <a href="#" class="btn btn-danger btn-responsive camera-font">Right</a>
+                  <a href="#" class="btn btn-warning btn-responsive camera-font">Top</a>
+                  <a href="#" class="btn btn-outline-dark disabled btn-responsive camera-font">Off</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 3D image gallery -->
+        <div class="col-sm-4">
+          <div class="card text-left">
+            <div class="card-header gallery-header">
+              Gallery
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">3D Images</h4>
+              <div class="gallery" id="gallery3"></div>
+              <p class="card-text">These 3D images of the Coke can, Sprite bottle and Dr Pepper cup are rendered in 3ds Max 2017 with Mental Ray
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Dr Pepper</h3>
+              <p class="card-text">Dr Pepper Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for well over a century
+                and it's still the same, with that distinctive flavour you just can't quite put your tongue on. It was created
+                by Texas pharmacist Charles Alderton in 1885.
+              </p>
+              <a href="www.owenfeltham.com" class="btn btn-primary">Find out more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--______p e p p e r   e n d_____________________M O D E L S    E N D_____-->
+
+
+  <!--_________F O O T E R     S T A R T_________________________________________________________________-->
+  <div id="footerColor" class="navbar navbar-expand-sm">
+    <div class="container-fluid ">
+      <div class="navbar-text float-left copyright">
+        <p>
+          <span class="align-baseline"> &copy 2018 Mobile Web 3D Applications |
+            <a href="javascript:changeLook()">Restyle</a> |
+            <a href="javascript:changeBack()">Reset</a>
+          </span>
+        </p>
+      </div>
+      <div class="navbar-text float-right social">
+        <a href="# ">
+          <i class="fab fa-facebook-square fa-2x "> </i>
+        </a>
+        <a href="# ">
+          <i class="fab fa-twitter         fa-2x "> </i>
+        </a>
+        <a href="# ">
+          <i class="fab fa-google-plus     fa-2x "> </i>
+        </a>
+        <a href="# ">
+          <i class="fab fa-github-square   fa-2x "> </i>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="modal fade" id="contactModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">modal title</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <p>owen@owenfeltham.co.uk</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class "btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--_________F O O T E R    E N D______________________________________________________________________-->
+
+
+  <!--_________S C R I P T S     S T A R T_______________________________________________________________-->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+  <script src="
+		https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="
+		sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+
+  <script src="
+		https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js " integrity="
+		sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4 " crossorigin="anonymous "></script>
+
+  <script src="assets/fonts/fontawesome-all.min.js "></script>
+
+  <script type='text/javascript' src='js/x3dom-1.7.2/x3dom.js'></script>
+
+  <script type="text/javascript" src="gallery/scripts/gallery_generator.js"></script>
+
+  <script src="js/custom.js"></script>
+
+  <script src="swap.js"></script>
+
+  <script src="js/getJsonData.js"></script>
+
+</body>
+
+</html>
